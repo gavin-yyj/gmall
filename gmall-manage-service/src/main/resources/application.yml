@@ -1,21 +1,34 @@
+# jdbc配置
 spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/gmall?characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+    username: root
+    password: root
+
   dubbo:
-    application:  user-server           #dubbo的配置
+    application:  manage-server           #dubbo的配置
     protocol:
       name: dubbo                       #dubbo中的服务名称
     registry:
       address: 192.168.37.132:2181      #zookeeper注册中心的地址
       protocol: zookeeper               #zookeeper的通讯协议的名称
     base-package: com.gavin.gmall       #dubbo的服务的扫描路径
-    consumer:
-      timeout: 600000                   #设置超时时间
-      check: false                      #设置是否检查服务存在
+
+# Mybatis配置
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+  mapper-locations: classpath:mapper/*Mapper.xml
 
 #service服务端口
 server:
-  port: 8080
+  port: 8071
 
 #日志级别
 logging:
   level:
     root: debug
+
+
+
+

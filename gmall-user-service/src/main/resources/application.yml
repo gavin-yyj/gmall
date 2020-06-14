@@ -1,7 +1,6 @@
 # jdbc配置
 spring:
   datasource:
-#    url: jdbc:mysql://localhost:3306/gmall?characterEncoding=UTF-8&serverTimeZone=Asia/Shanghai
     url: jdbc:mysql://localhost:3306/gmall?characterEncoding=utf-8&serverTimezone=Asia/Shanghai
     username: root
     password: root
@@ -14,7 +13,8 @@ spring:
       address: 192.168.37.132:2181      #zookeeper注册中心的地址
       protocol: zookeeper               #zookeeper的通讯协议的名称
     base-package: com.gavin.gmall       #dubbo的服务的扫描路径
-# Mapper配置
+
+# Mybatis配置
 mybatis:
   configuration:
     map-underscore-to-camel-case: true
@@ -22,17 +22,12 @@ mybatis:
 
 #service服务端口
 server:
-  port: 8087
+  port: 8070
 
 #日志级别
 logging:
   level:
     root: debug
-
-
-
-
-
 
 
 
