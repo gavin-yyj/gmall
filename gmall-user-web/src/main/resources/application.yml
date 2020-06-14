@@ -11,7 +11,7 @@ mybatis:
     map-underscore-to-camel-case: true
   mapper-locations: classpath:mapper/*Mapper.xml
 
-#服务端口
+#web服务端口
 server:
   port: 8080
 
