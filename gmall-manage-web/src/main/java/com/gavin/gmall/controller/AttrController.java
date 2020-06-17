@@ -1,6 +1,8 @@
 package com.gavin.gmall.controller;
 
 import bean.PmsBaseAttrInfo;
+import bean.PmsBaseAttrValue;
+import com.alibaba.dubbo.common.utils.StringUtils;
 import com.alibaba.dubbo.config.annotation.Reference;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -31,6 +33,14 @@ public class AttrController {
     @RequestMapping("saveAttrInfo")
     @ResponseBody
     public String saveAttrInfo(@RequestBody PmsBaseAttrInfo pmsBaseAttrInfo){
-        return "success";
+        String info = attrService.saveAttrInfo(pmsBaseAttrInfo);
+        return info;
+    }
+
+    @RequestMapping("getAttrValueList")
+    @ResponseBody
+    public List<PmsBaseAttrValue> getAttrValueList(String attrId){
+        List<PmsBaseAttrValue> attrValues = attrService.getAttrValueList(attrId);
+        return attrValues;
     }
 }

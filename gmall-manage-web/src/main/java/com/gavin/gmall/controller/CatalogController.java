@@ -6,7 +6,6 @@ import bean.PmsBaseCatalog3;
 import com.alibaba.dubbo.config.annotation.Reference;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import service.CatalogService;
@@ -24,7 +23,7 @@ import java.util.List;
 public class CatalogController {
     @Reference
     CatalogService catalogService;
-    @RequestMapping("getCatalog1")
+    @RequestMapping("/getCatalog1")
     @ResponseBody
     public List<PmsBaseCatalog1> getCatalog1(){
         List<PmsBaseCatalog1> catalog1s = catalogService.getCatalog1();

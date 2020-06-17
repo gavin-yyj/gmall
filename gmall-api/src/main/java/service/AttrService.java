@@ -1,6 +1,7 @@
 package service;
 
 import bean.PmsBaseAttrInfo;
+import bean.PmsBaseAttrValue;
 
 import java.util.List;
 
@@ -13,4 +14,8 @@ import java.util.List;
 public interface AttrService {
 
     List<PmsBaseAttrInfo> attrInfoList(String catalog3Id);
+
+    String saveAttrInfo(PmsBaseAttrInfo pmsBaseAttrInfo);
+
+    List<PmsBaseAttrValue> getAttrValueList(String attrId);
 }
