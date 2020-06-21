@@ -1,14 +1,13 @@
 package com.gavin.gmall.manage.mapper;
 
 import bean.PmsBaseSaleAttr;
-import bean.PmsProductSaleAttr;
 import tk.mybatis.mapper.common.Mapper;
 
 /**
  * @Author: gavin
  * @GitHub: https://github.com/gavin-yyj
- * @Date: Created in 15:38 2020/6/15
+ * @Date: Created in 14:41 2020/6/21
  * @Description:
  */
-public interface PmsProductSaleAttrMapper extends Mapper<PmsProductSaleAttr> {
+public interface PmsBaseSaleAttrMapper extends Mapper<PmsBaseSaleAttr> {
 }

@@ -1,7 +1,9 @@
 package service;
 
 import bean.PmsBaseSaleAttr;
+import bean.PmsProductImage;
 import bean.PmsProductInfo;
+import bean.PmsProductSaleAttr;
 
 import java.util.List;
 
@@ -14,5 +16,9 @@ import java.util.List;
 public interface SpuService {
     List<PmsProductInfo> spuList(String catalog3Id);
 
-    List<PmsBaseSaleAttr> baseSaleAttrList();
+    void saveSpuInfo(PmsProductInfo pmsProductInfo);
+
+    List<PmsProductSaleAttr> spuSaleAttrList(String spuId);
+
+    List<PmsProductImage> spuImageList(String spuId);
 }

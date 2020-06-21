@@ -35,5 +35,13 @@ public class PmsBaseCatalog1 implements Serializable {
     public void setName(String name) {
         this.name = name;
     }
+
+    public List<PmsBaseCatalog2> getCatalog2s() {
+        return catalog2s;
+    }
+
+    public void setCatalog2s(List<PmsBaseCatalog2> catalog2s) {
+        this.catalog2s = catalog2s;
+    }
 }
 
