@@ -7,3 +7,4 @@
 ## gmall-user-service 用户服务的service层8070
 ## gmall-user-web 用户服务的web层8080
 
+## Day05需要自己下载fastdfs-client-java包
