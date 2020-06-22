@@ -1,6 +1,6 @@
 spring:
   dubbo:
-    application:  manage-server           #dubbo的配置
+    application:  manage-web            #dubbo的配置
     protocol:
       name: dubbo                       #dubbo中的服务名称
     registry:

@@ -1,0 +1,24 @@
+spring:
+  dubbo:
+    application:  item-web              #dubbo的配置
+    protocol:
+      name: dubbo                       #dubbo中的服务名称
+    registry:
+      address: 192.168.37.132:2181      #zookeeper注册中心的地址
+      protocol: zookeeper               #zookeeper的通讯协议的名称
+    base-package: com.gavin.gmall       #dubbo的服务的扫描路径
+    consumer:
+      timeout: 600000                   #设置超时时间
+      check: false                      #设置是否检查服务存在
+  thymeleaf:
+    cache: false                        #关闭thymeleaf的缓存（热部署）
+    mode: LEGACYHTML5                    #松校验
+
+#service服务端口
+server:
+  port: 8082
+
+#日志级别
+logging:
+  level:
+    root: info
