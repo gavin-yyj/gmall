@@ -10,3 +10,4 @@ gmall-manage-web：       商品管理的web层  8081
 gmall-item-service:      前台的商品详情服务  8072（前面已经提供了该服务）
 gmall-item-web：         前台的商品详情展示  8082
 
+## Day05需要自己下载fastdfs-client-java包
