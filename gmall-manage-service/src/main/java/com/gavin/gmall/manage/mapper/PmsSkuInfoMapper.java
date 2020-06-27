@@ -3,6 +3,8 @@ package com.gavin.gmall.manage.mapper;
 import bean.PmsSkuInfo;
 import tk.mybatis.mapper.common.Mapper;
 
+import java.util.List;
+
 /**
  * @Author: gavin
  * @GitHub: https://github.com/gavin-yyj
@@ -10,4 +12,5 @@ import tk.mybatis.mapper.common.Mapper;
  * @Description:
  */
 public interface PmsSkuInfoMapper extends Mapper<PmsSkuInfo>{
+    List<PmsSkuInfo> selectSkuSaleAttrValueListBySpu(String productId);
 }

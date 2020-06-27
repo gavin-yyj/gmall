@@ -1,4 +1,4 @@
-package com.gavin.gmall.manage;
+package com.gavin.gmall;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
