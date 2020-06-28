@@ -29,7 +29,7 @@ mybatis:
 
 #service服务端口
 server:
-  port: 8074
+  port: 8073
 
 #日志级别
 logging:

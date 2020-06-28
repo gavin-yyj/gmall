@@ -5,6 +5,7 @@ import bean.PmsBaseAttrValue;
 import bean.PmsBaseSaleAttr;
 
 import java.util.List;
+import java.util.Set;
 
 /**
  * @Author: gavin
@@ -21,4 +22,6 @@ public interface AttrService {
     List<PmsBaseAttrValue> getAttrValueList(String attrId);
 
     List<PmsBaseSaleAttr> baseSaleAttrList();
+
+    List<PmsBaseAttrInfo> getAttrValueListByValueId(Set<String> valueIdSet);
 }

@@ -12,5 +12,9 @@ gmall-item-web：         前台的商品详情展示  8082
 
 ## Day05需要自己下载fastdfs-client-java包
 
-gmall-search-service     搜素服务的后台 8074
+gmall-search-service     搜素服务的后台 8073
 gmall-search-web         搜素服务的前台  8083
+
+
+gmall-cart-service      购物车的后台   8074
+gmall-cart-web          购物车的前台   8084
